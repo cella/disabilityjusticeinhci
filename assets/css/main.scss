@@ -33,8 +33,8 @@ $table-group-separator-color: $secondary;
 }
 
 .navbar {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 
   @include media-breakpoint-up(lg) {
     padding-top: 2.5rem;
@@ -55,8 +55,8 @@ header {
   -o-background-size: cover;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 
   @include media-breakpoint-up(lg) {
     margin-top: 8rem;
@@ -68,25 +68,29 @@ header {
 }
 
 section {
-    padding-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 19rem;
+    padding-right: 19rem;
+  }
+
+  &:last-of-type {
     padding-bottom: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 
     @include media-breakpoint-up(lg) {
-      padding-top: 6rem;
       padding-bottom: 6rem;
-      padding-left: 19rem;
-      padding-right: 19rem;
     }
+  }
 
-    &:last-of-type {
-      padding-bottom: 3rem;
-
-      @include media-breakpoint-up(lg) {
-        padding-bottom: 6rem;
-      }
-    }
+  .row > ul, .row > ol {
+    padding-left: 2rem;
+  }
 }
 
 .container {
@@ -102,12 +106,9 @@ body {
 
 #about {
   figure {
-
-
     @include media-breakpoint-up(lg) {
       padding: 0 7.5rem;
     }
-
 
     p {
       color: $gray-600;
