@@ -1,0 +1,126 @@
+---
+---
+
+// base variable overrides
+$display-font-weight: 500;
+$primary: #2D1D82;
+$secondary: #BE35A3;
+$font-size-base:              1rem * 1.125;
+$font-family-sans-serif:      "Helvetica Neue", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$spacer: 1rem;
+$lead-font-weight: 500;
+$display-font-weight:700;
+$headings-color: $primary;
+$blockquote-font-size: $font-size-base;
+
+//navbar variable overrides
+$navbar-light-color:                $primary;
+$navbar-light-hover-color:          $secondary;
+$navbar-light-active-color:         $secondary;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: $primary;
+$navbar-brand-font-size:            $font-size-base;
+$navbar-nav-link-padding-x:         2rem;
+$navbar-light-brand-color:          $primary;
+
+$table-group-separator-color: $secondary;
+
+@import 'bootstrap/bootstrap';
+@import 'fontawesome/fontawesome';
+
+.navbar-brand {
+  font-weight: $font-weight-bold;
+}
+
+.navbar {
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 2.5rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2rem;
+  }
+}
+
+header {
+  margin-top: 4rem;
+  background-attachment: scroll;
+  background-image: url('/assets/images/header-bg.png');
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 8rem;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+    padding-right: 9rem;
+    padding-left: 9rem;
+  }
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      padding-left: 19rem;
+      padding-right: 19rem;
+    }
+
+    &:last-of-type {
+      padding-bottom: 3rem;
+
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 6rem;
+      }
+    }
+}
+
+.container {
+  @include media-breakpoint-up(lg) {
+    max-width: 820px;
+  }
+
+}
+
+body {
+  position: relative;
+}
+
+#about {
+  figure {
+
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 7.5rem;
+    }
+
+
+    p {
+      color: $gray-600;
+    }
+
+    figcaption {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.table {
+  > :not(:first-child) {
+    border-top: $table-border-width solid $table-group-separator-color;
+  }
+}
