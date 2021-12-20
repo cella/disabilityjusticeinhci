@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A CHI 2022 Virtual Workshop on Disability Justice in Human-Computer Interaction.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://disabilityjusticeinhci.org" # the base hostname & protocol for your site, e.g. http://example.com
-banner_img: "https://disabilityjusticeinhci.org/assets/images/header-bg.png"
+bannerimg: "https://disabilityjusticeinhci.org/assets/images/header-bg.png"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
