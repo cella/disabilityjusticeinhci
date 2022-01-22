@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://disabilityjusticeinhci.org" # the base hostname & protocol for your site, e.g. http://example.com
 bannerimg: "https://disabilityjusticeinhci.org/assets/images/header-bg.png"
+bannerimgalt: "A dark purple background with an all-over pattern of pink illustrations showing a variety of people and assistive devices"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
